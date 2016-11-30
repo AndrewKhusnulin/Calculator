@@ -12,7 +12,10 @@ double mult ( float a,  float b)
 }
 double div ( float a,  float b)
 {
-	return (float)a / b;
+	if (b != 0) {
+		double *rez = new double;
+		*rez = a / b;
+		return rez;
 }
 double pow ( float a )
 {
