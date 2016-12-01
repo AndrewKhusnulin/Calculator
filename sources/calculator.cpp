@@ -10,7 +10,7 @@ double mult ( float a,  float b)
 {
 	return a * b;
 }
-double div ( float a,  float b)
+double *div ( float a,  float b)
 {
 	if (b != 0) {
 		double *rez = new double;
