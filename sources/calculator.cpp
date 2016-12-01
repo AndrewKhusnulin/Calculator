@@ -11,13 +11,14 @@ double mult ( float a,  float b)
 	return a * b;
 }
 double *div ( float a,  float b)
+{	
  if (b != 0) {
 		double *rez = new double;
 		*rez = a / b;
 		return rez;
                 }
 	 else return nulptr;
- }	 
+}	 
 double pow ( float a )
 {
 	unsigned int extent = 4;
