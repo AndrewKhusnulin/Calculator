@@ -29,7 +29,7 @@ SCENARIO("calculator div", "[div]") {
     float a = 9.0;
     float b = 1.0;
     
-    double rv = div( a, b );
+    double rv = *div( a, b );
     
 	REQUIRE( rv == 9.0 );
 }
