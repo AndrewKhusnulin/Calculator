@@ -17,7 +17,7 @@ double *div ( float a,  float b)
 		*rez = a / b;
 		return rez;
                 }
-	 else return nulptr;
+	 else return nullptr;
 }	 
 double pow ( float a )
 {
