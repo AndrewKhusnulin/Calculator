@@ -39,7 +39,7 @@ SCENARIO("calculator pow", "[pow]") {
     
     double rv = pow( a );
     
-	REQUIRE( rv == nullptr );
+	REQUIRE( rv == 0.25 );
 }
 SCENARIO("calculator sq", "[sq]") {
     float a = -9.0;
