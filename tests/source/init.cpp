@@ -42,7 +42,7 @@ SCENARIO("calculator pow", "[pow]") {
 	REQUIRE( rv == 6561.0 );
 }
 SCENARIO("calculator sq", "[sq]") {
-    float a = 9.0;
+    float a = -9.0;
     float b = 1.0;
     
     double rv = sq( a );
