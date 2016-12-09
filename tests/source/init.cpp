@@ -27,7 +27,7 @@ SCENARIO("calculator mult", "[mult]") {
 }
 SCENARIO("calculator div", "[div]") {
     float a = 9.0;
-    float b = 1.0;
+    float b = 0;
     
     double rv = *div( a, b );
     
