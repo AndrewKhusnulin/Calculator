@@ -31,7 +31,7 @@ SCENARIO("calculator div", "[div]") {
     
     double rv = *div( a, b );
     
-	REQUIRE( rv == 0 );
+	REQUIRE( rv == nullptr);
 }
 SCENARIO("calculator pow", "[pow]") {
     float a = -2.0;
@@ -39,7 +39,7 @@ SCENARIO("calculator pow", "[pow]") {
     
     double rv = pow( a );
     
-	REQUIRE( rv == 0.25 );
+	REQUIRE( rv == nullptr );
 }
 SCENARIO("calculator sq", "[sq]") {
     float a = -9.0;
@@ -47,5 +47,5 @@ SCENARIO("calculator sq", "[sq]") {
     
     double rv = sq( a );
     
-	REQUIRE( rv == 0 );
+	REQUIRE( rv == nullptr );
 }
