@@ -31,7 +31,7 @@ SCENARIO("calculator div", "[div]") {
     
     double rv = *div( a, b );
     
-	REQUIRE( rv == 9.0 );
+	REQUIRE( rv == nullptr );
 }
 SCENARIO("calculator pow", "[pow]") {
     float a = 9.0;
