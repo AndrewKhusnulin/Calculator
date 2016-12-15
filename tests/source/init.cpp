@@ -11,7 +11,7 @@ SCENARIO("calculator sum", "[sum]") {
 }
 SCENARIO("calculator sub", "[sub]") {
     float a = 9.0;
-    float b = 1.
+    float b = 1;
     
     double rv = sub( a, b );
     
@@ -44,12 +44,6 @@ SCENARIO("calculator sqrt1", "[sqrt1]") {
     double a = 0.0;    
     double rv = *sqrt1(a);    
 	REQUIRE( rv == 0.0);
-}
-SCENARIO("Calculator pow.1", "[pow1]") {
-    float a = 2;
-    int b = -1;    
-    double rv = pow1( a, b );    
-	REQUIRE( rv == 0.5);
 }
 SCENARIO("calculator sqrt1.1", "[sqrt1]") {
     double a = -3;
