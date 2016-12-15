@@ -38,7 +38,7 @@ SCENARIO("calculator pow", "[pow]") {
     
     double rv = pow( a );
     
-	REQUIRE( rv == 4 );
+	REQUIRE( rv == 16 );
 }
 SCENARIO("calculator sqrt1", "[sqrt1]") {
     double a = 0.0;    
