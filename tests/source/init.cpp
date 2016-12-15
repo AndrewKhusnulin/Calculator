@@ -11,7 +11,7 @@ SCENARIO("calculator sum", "[sum]") {
 }
 SCENARIO("calculator sub", "[sub]") {
     float a = 9.0;
-    float b = 1.0;
+    float b = 1.
     
     double rv = sub( a, b );
     
@@ -19,33 +19,48 @@ SCENARIO("calculator sub", "[sub]") {
 }
 SCENARIO("calculator mult", "[mult]") {
     float a = 9.0;
-    float b = 1.0;
-    
+    float b = 1.0;   
     double rv = mult( a, b );
     
 	REQUIRE( rv == 9.0 );
 }
 SCENARIO("calculator div", "[div]") {
     float a = 9.0;
-    float b = 0;
+    float b = 1;
     
     double rv = *div( a, b );
     
-	REQUIRE( rv == nullptr_t);
+	REQUIRE( rv == 9);
 }
 SCENARIO("calculator pow", "[pow]") {
-    float a = -2.0;
+    float a = 2.0;
     float b = 1.0;
     
     double rv = pow( a );
     
-	REQUIRE( rv == 0.25 );
+	REQUIRE( rv == 4 );
 }
-SCENARIO("calculator sq", "[sq]") {
-    float a = -9.0;
-    float b = 1.0;
-    
-    double rv = sq( a );
-    
-	REQUIRE( rv == nullptr_t );
+SCENARIO("calculator sqrt1", "[sqrt1]") {
+    double a = 0.0;    
+    double rv = *sqrt1(a);    
+	REQUIRE( rv == 0.0);
+}
+SCENARIO("Calculator pow.1", "[pow1]") {
+    float a = 2;
+    int b = -1;    
+    double rv = pow1( a, b );    
+	REQUIRE( rv == 0.5);
+}
+SCENARIO("calculator sqrt1.1", "[sqrt1]") {
+    double a = -3;
+    long double *rv = sqrt1(a);
+	REQUIRE( rv == nullptr );
+    delete rv;
+}
+SCENARIO("Calculator div.1", "[div]") {
+    float a = 8;
+    float b = 0;	
+    double *rv = div( a, b );
+	REQUIRE( rv == nullptr );
+    delete rv;
 }
