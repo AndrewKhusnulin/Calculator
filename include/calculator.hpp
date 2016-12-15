@@ -3,4 +3,4 @@ double sub ( float a,  float b);
 double mult ( float a,  float b);
 double *div ( float a,  float b);
 double pow ( float a );
-double sq ( float a );
+long double *sqrt1(double a);
