@@ -34,10 +34,7 @@ SCENARIO("calculator div", "[div]") {
 }
 SCENARIO("calculator pow", "[pow]") {
     float a = 2.0;
-    float b = 1.0;
-    
-    double rv = pow( a );
-    
+    double rv = pow( a );    
 	REQUIRE( rv == 16 );
 }
 SCENARIO("calculator sqrt1", "[sqrt1]") {
